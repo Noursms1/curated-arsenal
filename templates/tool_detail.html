@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ tool.name }} | Curated Arsenal</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/" style="color: #00ffcc; text-decoration: none;">&larr; Back to Arsenal</a>
+        <h1>{{ tool.name }}</h1>
+        <p>{{ tool.description }}</p>
+    </header>
+    
+    <main class="detail-layout">
+        <aside class="sidebar">
+            <div class="meta-box">
+                <p><strong>Category:</strong> {{ tool.category }}</p>
+                <p><strong>Usage:</strong> <code>{{ tool.usage }}</code></p>
+                <a href="/download/{{ tool.id }}" class="btn-download">&#11015; Download</a>
+                <button onclick="downloadPDF()" class="btn-download" style="background: #e74c3c; border:none; cursor:pointer;">📄 PDF Report</button>
+            </div>
+            
+            <div class="chart-box">
+                <h3>Capabilities</h3>
+                <canvas id="radarChart"></canvas>
+            </div>
+
+            <div class="cve-panel" id="cvePanel" style="display: none;">
+                <h3 style="color: #ff7b72; margin-top:0;">🔴 Potential CVEs</h3>
+                <div id="cveList"></div>
+            </div>
+
+            <div class="chains-panel" id="chainsPanel" style="display: none;">
+                <h3 style="color: #ffa657; margin-top:0;">⚡ Attack Chains</h3>
+                <div id="chainsList"></div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="terminal-container">
+                <div class="terminal-header" style="display:flex; justify-content:space-between;">
+                    <span>● ● ● Terminal</span>
+                    <div>
+                        <button onclick="generateReport()" class="term-btn" style="background: #e74c3c; color: white;">📝 Generate Report</button>
+                        <button onclick="beautifyJSON()" class="term-btn">🎨 Beautify</button>
+                    </div>
+                </div>
+                <div class="terminal-input-row">
+                    <span class="prompt">$</span>
+                    <input type="text" id="args-input" placeholder="Arguments (e.g., example.com)" />
+                    <button onclick="runTool()" id="run-btn">RUN</button>
+                </div>
+                <pre id="terminal-output" class="terminal-output">Ready...</pre>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('code')">Source</button>
+                <button class="tab-btn" onclick="showTab('review')">Review</button>
+            </div>
+            <div id="code" class="tab-content active"><pre><code class="language-python">{{ code }}</code></pre></div>
+            <div id="review" class="tab-content"><div class="review-content">{{ review }}</div></div>
+        </section>
+    </main>
+
+    <div id="reportModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('reportModal').style.display='none'">&times;</span>
+            <h2>Bug Report</h2>
+            <textarea id="reportText"></textarea>
+            <button onclick="copyReport()" class="modal-btn">📋 Copy</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script>
+        let currentOutput = "";
+        let lastScanResult = null;
+
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Chart
+        const metrics = {{ tool.metrics | default({}) | tojson | safe }};
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: { labels: Object.keys(metrics), datasets: [{ data: Object.values(metrics), backgroundColor: 'rgba(0, 255, 204, 0.2)', borderColor: '#00ffcc' }] },
+            options: { scales: { r: { ticks: { display: false, min: 0, max: 10 } } }, plugins: { legend: { display: false } } }
+        });
+
+        // Extract JSON from mixed output (handles STDERR after JSON)
+        function extractJSON(text) {
+            if (!text) return null;
+            const start = text.indexOf('{');
+            if (start === -1) return null;
+            let depth = 0, inString = false, escape = false;
+            for (let i = start; i < text.length; i++) {
+                const c = text[i];
+                if (escape) { escape = false; continue; }
+                if (c === '\\') { escape = true; continue; }
+                if (c === '"') { inString = !inString; continue; }
+                if (inString) continue;
+                if (c === '{') depth++;
+                else if (c === '}') {
+                    depth--;
+                    if (depth === 0) {
+                        try { return JSON.parse(text.substring(start, i + 1)); }
+                        catch(e) { return null; }
+                    }
+                }
+            }
+            return null;
+        }
+
+        // Run Tool
+        async function runTool() {
+            const args = document.getElementById('args-input').value;
+            const out = document.getElementById('terminal-output');
+            const btn = document.getElementById('run-btn');
+            btn.disabled = true;
+            out.innerText = "Executing...";
+            
+            // Reset panels
+            document.getElementById('cvePanel').style.display = 'none';
+            document.getElementById('chainsPanel').style.display = 'none';
+            
+            try {
+                const res = await fetch("/api/run_tool/{{ tool.id }}", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({args: args})
+                });
+                const data = await res.json();
+                
+                currentOutput = data.error ? data.error : (data.stdout + (data.stderr ? "\n[STDERR]\n" + data.stderr : ""));
+                out.innerText = currentOutput || "(No output)";
+                
+                // Parse JSON from stdout (pure)
+                const scanResult = extractJSON(data.stdout || "");
+                if (scanResult) {
+                    lastScanResult = scanResult;
+                    const techs = scanResult.technologies || [];
+                    console.log("[runTool] Technologies:", techs);
+                    
+                    if (techs.length > 0) {
+                        await mapCVEs(techs);
+                    }
+                    await analyzeChains(scanResult);
+                } else {
+                    console.warn("[runTool] Could not parse JSON from stdout");
+                }
+            } catch (e) {
+                out.innerText = "Error: " + e.message;
+            }
+            btn.disabled = false;
+        }
+
+        // Beautify JSON
+        function beautifyJSON() {
+            const parsed = extractJSON(currentOutput);
+            if (!parsed) { alert("No valid JSON found in output"); return; }
+            document.getElementById('terminal-output').innerText = JSON.stringify(parsed, null, 2);
+        }
+
+        // CVE Mapper
+        async function mapCVEs(techs) {
+            const panel = document.getElementById('cvePanel');
+            const list = document.getElementById('cveList');
+            try {
+                const res = await fetch("/api/cve/map", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({technologies: techs})
+                });
+                const data = await res.json();
+                if (!data.total_cves || data.total_cves === 0) return;
+                
+                let html = '<p style="font-size:12px;color:#8b949e;margin:0 0 10px 0;">' + data.total_cves + ' CVEs found:</p>';
+                data.findings.forEach(f => {
+                    const color = f.severity === 'Critical' ? '#e74c3c' : (f.severity === 'High' ? '#f39c12' : '#f1c40f');
+                    html += '<div style="background:#000;padding:8px;border-radius:4px;margin-bottom:6px;border-left:3px solid ' + color + ';">';
+                    html += '<div style="color:' + color + ';font-weight:bold;font-size:12px;">' + f.cve + ' (' + f.severity + ' ' + f.cvss + ')</div>';
+                    html += '<div style="font-size:11px;color:#c9d1d9;">' + f.description + '</div>';
+                    html += '<div style="font-size:10px;color:#8b949e;">Affected: ' + f.affected_versions + '</div>';
+                    html += '</div>';
+                });
+                list.innerHTML = html;
+                panel.style.display = 'block';
+            } catch(e) { console.error("CVE error:", e); }
+        }
+
+        // Attack Chains
+        async function analyzeChains(scanResult) {
+            const panel = document.getElementById('chainsPanel');
+            const list = document.getElementById('chainsList');
+            try {
+                const res = await fetch("/api/analyze_chains", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({scan_result: scanResult})
+                });
+                const data = await res.json();
+                if (!data.chains || data.chains.length === 0) return;
+                
+                let html = '<p style="font-size:12px;color:#8b949e;margin:0 0 10px 0;">' + data.chains.length + ' chains:</p>';
+                data.chains.forEach(c => {
+                    const color = c.severity === 'Critical' ? '#e74c3c' : (c.severity === 'High' ? '#f39c12' : (c.severity === 'Medium' ? '#f1c40f' : '#3498db'));
+                    html += '<div style="background:#000;padding:10px;border-radius:4px;margin-bottom:8px;border-left:3px solid ' + color + ';">';
+                    html += '<div style="color:' + color + ';font-weight:bold;font-size:13px;">⚡ ' + c.name + ' (' + c.severity + ')</div>';
+                    html += '<div style="font-size:11px;color:#c9d1d9;margin-top:4px;"><strong>Why:</strong> ' + c.reasoning + '</div>';
+                    html += '<div style="font-size:11px;color:#ffa657;margin-top:4px;"><strong>Test:</strong> ' + c.test_suggestion + '</div>';
+                    html += '</div>';
+                });
+                list.innerHTML = html;
+                panel.style.display = 'block';
+            } catch(e) { console.error("Chains error:", e); }
+        }
+
+        // Generate Report
+        function generateReport() {
+            const target = document.getElementById('args-input').value || '[TARGET]';
+            const parsed = extractJSON(currentOutput);
+            let techs = "None";
+            let cves = "None";
+            
+            if (parsed && parsed.technologies) techs = parsed.technologies.join(", ");
+            
+            const cveDivs = document.querySelectorAll('#cveList > div');
+            if (cveDivs.length > 0) {
+                let arr = [];
+                cveDivs.forEach(d => { arr.push(d.querySelector('div').innerText); });
+                cves = arr.join("\n");
+            }
+            
+            const template = "# Security Assessment Report\n\n" +
+                "## Target\n" + target + "\n\n" +
+                "## Tool\n{{ tool.name }}\n\n" +
+                "## Detected Technologies\n" + techs + "\n\n" +
+                "## Potential CVEs\n" + cves + "\n\n" +
+                "## Raw Output\n```json\n" + currentOutput + "\n```\n\n" +
+                "---\n*Generated by Curated Arsenal*";
+            
+            document.getElementById('reportText').value = template;
+            document.getElementById('reportModal').style.display = 'block';
+        }
+
+        function copyReport() {
+            document.getElementById('reportText').select();
+            document.execCommand('copy');
+            alert("Copied!");
+        }
+    </script>
+</body>
+</html>

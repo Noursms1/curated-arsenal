@@ -1,0 +1,164 @@
+{
+  "WordPress": [
+    {
+      "cve": "CVE-2023-2982",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "<= 6.2.2",
+      "desc": "Authentication Bypass via Social Login"
+    },
+    {
+      "cve": "CVE-2022-21661",
+      "severity": "High",
+      "cvss": 8.8,
+      "affected": "<= 5.8.2",
+      "desc": "SQL Injection via WP_Query"
+    }
+  ],
+  "Drupal": [
+    {
+      "cve": "CVE-2018-7600",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "7.x, 8.x < 8.5.1",
+      "desc": "Drupalgeddon2 - RCE"
+    },
+    {
+      "cve": "CVE-2019-6340",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "8.6.x < 8.6.10",
+      "desc": "REST RCE"
+    },
+    {
+      "cve": "CVE-2020-13671",
+      "severity": "High",
+      "cvss": 8.8,
+      "affected": "7.x, 8.x, 9.x",
+      "desc": "File Upload RCE"
+    }
+  ],
+  "Ruby on Rails": [
+    {
+      "cve": "CVE-2024-26143",
+      "severity": "High",
+      "cvss": 7.5,
+      "affected": "7.x, 6.x",
+      "desc": "XSS in ActionController"
+    },
+    {
+      "cve": "CVE-2024-47887",
+      "severity": "Medium",
+      "cvss": 6.5,
+      "affected": "7.x, 6.x",
+      "desc": "ActionPack DoS"
+    },
+    {
+      "cve": "CVE-2019-5418",
+      "severity": "High",
+      "cvss": 7.5,
+      "affected": "Rails 5.2.x < 5.2.2.1",
+      "desc": "File Content Disclosure"
+    }
+  ],
+  "Next.js": [
+    {
+      "cve": "CVE-2024-34351",
+      "severity": "High",
+      "cvss": 7.5,
+      "affected": ">= 13.4.0, < 14.1.1",
+      "desc": "SSRF via Server Actions"
+    },
+    {
+      "cve": "CVE-2023-46298",
+      "severity": "Medium",
+      "cvss": 5.3,
+      "affected": "< 13.5.1",
+      "desc": "Cache Poisoning"
+    }
+  ],
+  "Laravel": [
+    {
+      "cve": "CVE-2024-40075",
+      "severity": "High",
+      "cvss": 8.8,
+      "affected": "Laravel < 10.48.20",
+      "desc": "PHP Object Injection"
+    }
+  ],
+  "jQuery": [
+    {
+      "cve": "CVE-2020-11023",
+      "severity": "Medium",
+      "cvss": 6.1,
+      "affected": "< 3.5.0",
+      "desc": "XSS via htmlPrefilter"
+    },
+    {
+      "cve": "CVE-2019-11358",
+      "severity": "Medium",
+      "cvss": 6.1,
+      "affected": "< 3.4.0",
+      "desc": "Prototype Pollution"
+    }
+  ],
+  "Apache": [
+    {
+      "cve": "CVE-2021-41773",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "2.4.49",
+      "desc": "Path Traversal + RCE"
+    },
+    {
+      "cve": "CVE-2021-42013",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "2.4.50",
+      "desc": "Path Traversal bypass"
+    }
+  ],
+  "Nginx": [
+    {
+      "cve": "CVE-2021-23017",
+      "severity": "High",
+      "cvss": 7.7,
+      "affected": "1.19.0",
+      "desc": "DNS Resolver off-by-one"
+    }
+  ],
+  "PHP": [
+    {
+      "cve": "CVE-2024-4577",
+      "severity": "Critical",
+      "cvss": 9.8,
+      "affected": "8.1, 8.2, 8.3 (Windows)",
+      "desc": "CGI Argument Injection RCE"
+    }
+  ],
+  "Django": [
+    {
+      "cve": "CVE-2024-38875",
+      "severity": "Medium",
+      "cvss": 5.3,
+      "affected": "< 4.2.14",
+      "desc": "DoS via strip_tags"
+    },
+    {
+      "cve": "CVE-2023-31047",
+      "severity": "High",
+      "cvss": 7.5,
+      "affected": "< 4.2.2",
+      "desc": "File Upload Bypass"
+    }
+  ],
+  "React": [
+    {
+      "cve": "CVE-2024-21668",
+      "severity": "Medium",
+      "cvss": 5.3,
+      "affected": "react-dom < 18.2.0",
+      "desc": "Prototype Pollution"
+    }
+  ]
+}

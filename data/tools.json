@@ -1,0 +1,3832 @@
+{
+  "tools": [
+    {
+      "id": "address_validator",
+      "name": "Address Validator",
+      "category": "Blockchain",
+      "description": "أداة للتحقق من صحة عنوان محفظة إيثيريوم (أو أي شبكة EVM) من حيث الصيغة.",
+      "language": "Python",
+      "file_path": "data/scripts/address_validator.py",
+      "review_path": "data/reviews/address_validator.md",
+      "usage": "python address_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "erc20_allowance_checker",
+      "name": "Erc20 Allowance Checker",
+      "category": "Blockchain",
+      "description": "تُعيد بيانات الـ calldata لتابع allowance(address,address) في ERC20.",
+      "language": "Python",
+      "file_path": "data/scripts/erc20_allowance_checker.py",
+      "review_path": "data/reviews/erc20_allowance_checker.md",
+      "usage": "python erc20_allowance_checker.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "erc20_approval_checker",
+      "name": "Erc20 Approval Checker",
+      "category": "Blockchain",
+      "description": "erc20_approval_checker",
+      "language": "Python",
+      "file_path": "data/scripts/erc20_approval_checker.py",
+      "review_path": "data/reviews/erc20_approval_checker.md",
+      "usage": "python erc20_approval_checker.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "eth_address_validator",
+      "name": "Eth Address Validator",
+      "category": "Blockchain",
+      "description": "Validates Ethereum/EVM wallet addresses (EIP-55 checksum, hex format)",
+      "language": "Python",
+      "file_path": "data/scripts/eth_address_validator.py",
+      "review_path": "data/reviews/eth_address_validator.md",
+      "usage": "python eth_address_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "evm_address_validator",
+      "name": "Evm Address Validator",
+      "category": "Blockchain",
+      "description": "evm_address_validator",
+      "language": "Python",
+      "file_path": "data/scripts/evm_address_validator.py",
+      "review_path": "data/reviews/evm_address_validator.md",
+      "usage": "python evm_address_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "evm_wallet_validator",
+      "name": "Evm Wallet Validator",
+      "category": "Blockchain",
+      "description": "Wallet address validator for EVM chains.",
+      "language": "Python",
+      "file_path": "data/scripts/evm_wallet_validator.py",
+      "review_path": "data/reviews/evm_wallet_validator.md",
+      "usage": "python evm_wallet_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "gas_price_analyzer",
+      "name": "Gas Price Analyzer",
+      "category": "Blockchain",
+      "description": "جلب أسعار الغاز من ethgasstation.info وتوحيد الوحدات إلى Gwei",
+      "language": "Python",
+      "file_path": "data/scripts/gas_price_analyzer.py",
+      "review_path": "data/reviews/gas_price_analyzer.md",
+      "usage": "python gas_price_analyzer.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "is_contract_checker",
+      "name": "Is Contract Checker",
+      "category": "Blockchain",
+      "description": "Checks if an EVM address is a smart contract or EOA",
+      "language": "Python",
+      "file_path": "data/scripts/is_contract_checker.py",
+      "review_path": "data/reviews/is_contract_checker.md",
+      "usage": "python is_contract_checker.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "reentrancy_detector",
+      "name": "Reentrancy Detector",
+      "category": "Blockchain",
+      "description": "يقرأ كود العقد إما من ملف يُمرّر كوسيط أو من stdin",
+      "language": "Python",
+      "file_path": "data/scripts/reentrancy_detector.py",
+      "review_path": "data/reviews/reentrancy_detector.md",
+      "usage": "python reentrancy_detector.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "reentrancy_scanner",
+      "name": "Reentrancy Scanner",
+      "category": "Blockchain",
+      "description": "Detects reentrancy vulnerabilities in Solidity contracts",
+      "language": "Python",
+      "file_path": "data/scripts/reentrancy_scanner.py",
+      "review_path": "data/reviews/reentrancy_scanner.md",
+      "usage": "python reentrancy_scanner.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "token_allowance_checker",
+      "name": "Token Allowance Checker",
+      "category": "Blockchain",
+      "description": "تجهيز قيمة hex لتكون بطول ثابت (64 حرف = 32 بايت).",
+      "language": "Python",
+      "file_path": "data/scripts/token_allowance_checker.py",
+      "review_path": "data/reviews/token_allowance_checker.md",
+      "usage": "python token_allowance_checker.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "token_approval_checker",
+      "name": "Token Approval Checker",
+      "category": "Blockchain",
+      "description": "Checks ERC-20 token approvals and allowances",
+      "language": "Python",
+      "file_path": "data/scripts/token_approval_checker.py",
+      "review_path": "data/reviews/token_approval_checker.md",
+      "usage": "python token_approval_checker.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wallet_address_validator",
+      "name": "Wallet Address Validator",
+      "category": "Blockchain",
+      "description": "أداة للتحقق من صحة عنوان إيثيريوم وفق معيار EIP‑55.",
+      "language": "Python",
+      "file_path": "data/scripts/wallet_address_validator.py",
+      "review_path": "data/reviews/wallet_address_validator.md",
+      "usage": "python wallet_address_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wallet_validator",
+      "name": "Wallet Validator",
+      "category": "Blockchain",
+      "description": "Validates blockchain wallet addresses across EVM chains",
+      "language": "Python",
+      "file_path": "data/scripts/wallet_validator.py",
+      "review_path": "data/reviews/wallet_validator.md",
+      "usage": "python wallet_validator.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wallte",
+      "name": "Wallte (ERC-20)",
+      "category": "Blockchain",
+      "description": "Reads ERC-20 allowance via eth_call",
+      "language": "Python",
+      "file_path": "data/scripts/wallte.py",
+      "review_path": "data/reviews/wallte.md",
+      "usage": "python wallte.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "base64_payload_extractor",
+      "name": "Base64 Payload Extractor",
+      "category": "Crypto",
+      "description": "Extracts and decodes Base64 payloads from input",
+      "language": "Python",
+      "file_path": "data/scripts/base64_payload_extractor.py",
+      "review_path": "data/reviews/base64_payload_extractor.md",
+      "usage": "python base64_payload_extractor.py [args]",
+      "tags": [
+        "Crypto",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "jwt_decoder",
+      "name": "Jwt Decoder",
+      "category": "Crypto",
+      "description": "JWT Decoder and optional validator.",
+      "language": "Python",
+      "file_path": "data/scripts/jwt_decoder.py",
+      "review_path": "data/reviews/jwt_decoder.md",
+      "usage": "python jwt_decoder.py [args]",
+      "tags": [
+        "Crypto",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "jwt_tester",
+      "name": "Jwt Tester",
+      "category": "Crypto",
+      "description": "Detects JWT weaknesses: none algo, weak secrets, confusion",
+      "language": "Python",
+      "file_path": "data/scripts/jwt_tester.py",
+      "review_path": "data/reviews/jwt_tester.md",
+      "usage": "python jwt_tester.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "multi_decoder_v2",
+      "name": "Multi Decoder V2",
+      "category": "Crypto",
+      "description": "PCT Multi-Decoder v3.0 - 3 fixes over v2",
+      "language": "Python",
+      "file_path": "data/scripts/multi_decoder_v2.py",
+      "review_path": "data/reviews/multi_decoder_v2.md",
+      "usage": "python multi_decoder_v2.py [args]",
+      "tags": [
+        "Crypto",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "password_strength_analyzer",
+      "name": "Password Strength Analyzer",
+      "category": "Crypto",
+      "description": "Analyzes password strength: entropy, length, patterns",
+      "language": "Python",
+      "file_path": "data/scripts/password_strength_analyzer.py",
+      "review_path": "data/reviews/password_strength_analyzer.md",
+      "usage": "python password_strength_analyzer.py [args]",
+      "tags": [
+        "Crypto",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "file_signature_verifier",
+      "name": "File Signature Verifier",
+      "category": "Malware",
+      "description": "Identifies file types by magic bytes signature",
+      "language": "Python",
+      "file_path": "data/scripts/file_signature_verifier.py",
+      "review_path": "data/reviews/file_signature_verifier.md",
+      "usage": "python file_signature_verifier.py [args]",
+      "tags": [
+        "Malware",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "malware_analyzer",
+      "name": "Malware Analyzer",
+      "category": "Malware",
+      "description": "PCT Malware Analyzer v1.3 - Complete",
+      "language": "Python",
+      "file_path": "data/scripts/malware_analyzer.py",
+      "review_path": "data/reviews/malware_analyzer.md",
+      "usage": "python malware_analyzer.py [args]",
+      "tags": [
+        "Malware",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ipv6_port_scanner",
+      "name": "Ipv6 Port Scanner",
+      "category": "Network",
+      "description": "Scans IPv6 addresses for open TCP ports",
+      "language": "Python",
+      "file_path": "data/scripts/ipv6_port_scanner.py",
+      "review_path": "data/reviews/ipv6_port_scanner.md",
+      "usage": "python ipv6_port_scanner.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ipv6_range_scanner",
+      "name": "Ipv6 Range Scanner",
+      "category": "Network",
+      "description": "Ipv6 Range Scanner",
+      "language": "Python",
+      "file_path": "data/scripts/ipv6_range_scanner.py",
+      "review_path": "data/reviews/ipv6_range_scanner.md",
+      "usage": "python ipv6_range_scanner.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "port_scanner_v41_final",
+      "name": "Port Scanner V41 Final",
+      "category": "Network",
+      "description": "Port Scanner v4.1 — WAF-aware, HackerOne-safe, CVEs mapped",
+      "language": "Python",
+      "file_path": "data/scripts/port_scanner_v41_final.py",
+      "review_path": "data/reviews/port_scanner_v41_final.md",
+      "usage": "python port_scanner_v41_final.py [args]",
+      "tags": [
+        "Network",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": "Port Scanner",
+      "version_order": 41,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "port_scanner_v4",
+      "name": "Port Scanner V4",
+      "category": "Network",
+      "description": "Port Scanner v4.0 — base version",
+      "language": "Python",
+      "file_path": "data/scripts/port_scanner_v4.py",
+      "review_path": "data/reviews/port_scanner_v4.md",
+      "usage": "python port_scanner_v4.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Port Scanner",
+      "version_order": 4,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "port_scanner",
+      "name": "Port Scanner",
+      "category": "Network",
+      "description": "Port Scanner v1 — original",
+      "language": "Python",
+      "file_path": "data/scripts/port_scanner.py",
+      "review_path": "data/reviews/port_scanner.md",
+      "usage": "python port_scanner.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Port Scanner",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "snmp_community_tester",
+      "name": "Snmp Community Tester",
+      "category": "Network",
+      "description": "Tests SNMP devices against common community strings",
+      "language": "Python",
+      "file_path": "data/scripts/snmp_community_tester.py",
+      "review_path": "data/reviews/snmp_community_tester.md",
+      "usage": "python snmp_community_tester.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "tcp_connect_scanner",
+      "name": "Tcp Connect Scanner",
+      "category": "Network",
+      "description": "TCP Connect Scanner - Scans open TCP ports on a target.",
+      "language": "Python",
+      "file_path": "data/scripts/tcp_connect_scanner.py",
+      "review_path": "data/reviews/tcp_connect_scanner.md",
+      "usage": "python tcp_connect_scanner.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "tcp_port_scanner",
+      "name": "Tcp Port Scanner",
+      "category": "Network",
+      "description": "أداة فحص فتح المنفذ TCP لمجموعة عناوين IPv4.",
+      "language": "Python",
+      "file_path": "data/scripts/tcp_port_scanner.py",
+      "review_path": "data/reviews/tcp_port_scanner.md",
+      "usage": "python tcp_port_scanner.py [args]",
+      "tags": [
+        "Network",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ip_geolocation_lookup",
+      "name": "Ip Geolocation Lookup",
+      "category": "OSINT",
+      "description": "Retrieves geolocation data (country, city, ASN) for an IP",
+      "language": "Python",
+      "file_path": "data/scripts/ip_geolocation_lookup.py",
+      "review_path": "data/reviews/ip_geolocation_lookup.md",
+      "usage": "python ip_geolocation_lookup.py [args]",
+      "tags": [
+        "OSINT",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "leak_monitor_v2",
+      "name": "Leak Monitor V2",
+      "category": "OSINT",
+      "description": "Leak Monitor v2 — HIBP + LeakCheck + local",
+      "language": "Python",
+      "file_path": "data/scripts/leak_monitor_v2.py",
+      "review_path": "data/reviews/leak_monitor_v2.md",
+      "usage": "python leak_monitor_v2.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": "Leak Monitor",
+      "version_order": 2,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "leak_monitor",
+      "name": "Leak Monitor",
+      "category": "OSINT",
+      "description": "Leak Monitor v1 — original",
+      "language": "Python",
+      "file_path": "data/scripts/leak_monitor.py",
+      "review_path": "data/reviews/leak_monitor.md",
+      "usage": "python leak_monitor.py [args]",
+      "tags": [
+        "OSINT",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Leak Monitor",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cidr_subnet_calculator",
+      "name": "Cidr Subnet Calculator",
+      "category": "Recon",
+      "description": "CIDR Calculator — full info",
+      "language": "Python",
+      "file_path": "data/scripts/cidr_subnet_calculator.py",
+      "review_path": "data/reviews/cidr_subnet_calculator.md",
+      "usage": "python cidr_subnet_calculator.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "CIDR Calculator",
+      "version_order": 2,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cidr_subnet_calc",
+      "name": "Cidr Subnet Calc",
+      "category": "Recon",
+      "description": "CIDR Calculator — basic",
+      "language": "Python",
+      "file_path": "data/scripts/cidr_subnet_calc.py",
+      "review_path": "data/reviews/cidr_subnet_calc.md",
+      "usage": "python cidr_subnet_calc.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "CIDR Calculator",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "crtsh",
+      "name": "Crtsh",
+      "category": "Recon",
+      "description": "crtsh.py — استخراج النطاقات الفرعية من crt.sh.",
+      "language": "Python",
+      "file_path": "data/scripts/crtsh.py",
+      "review_path": "data/reviews/crtsh.md",
+      "usage": "python crtsh.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "crtsh_subdomain_enumerator",
+      "name": "Crtsh Subdomain Enumerator",
+      "category": "Recon",
+      "description": "Enumerates subdomains via crt.sh logs",
+      "language": "Python",
+      "file_path": "data/scripts/crtsh_subdomain_enumerator.py",
+      "review_path": "data/reviews/crtsh_subdomain_enumerator.md",
+      "usage": "python crtsh_subdomain_enumerator.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "dns_axfr_tester",
+      "name": "Dns Axfr Tester",
+      "category": "Recon",
+      "description": "يبني طلب DNS من نوع AXFR للـ domain المحدد",
+      "language": "Python",
+      "file_path": "data/scripts/dns_axfr_tester.py",
+      "review_path": "data/reviews/dns_axfr_tester.md",
+      "usage": "python dns_axfr_tester.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "dns_resolver",
+      "name": "Dns Resolver",
+      "category": "Recon",
+      "description": "Resolves A, MX, NS, TXT records for a domain",
+      "language": "Python",
+      "file_path": "data/scripts/dns_resolver.py",
+      "review_path": "data/reviews/dns_resolver.md",
+      "usage": "python dns_resolver.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "advanced_domain_scanner_v2",
+      "name": "Advanced Domain Scanner V2",
+      "category": "Recon",
+      "description": "Domain Scanner v2.0 — full recon: ports + SSL + tech + robots",
+      "language": "Python",
+      "file_path": "data/scripts/advanced_domain_scanner_v2.py",
+      "review_path": "data/reviews/advanced_domain_scanner_v2.md",
+      "usage": "python advanced_domain_scanner_v2.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": "Domain Scanner",
+      "version_order": 99,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "domain_scanner_v2",
+      "name": "Domain Scanner V2",
+      "category": "Recon",
+      "description": "Domain Scanner v2 — basic",
+      "language": "Python",
+      "file_path": "data/scripts/domain_scanner_v2.py",
+      "review_path": "data/reviews/domain_scanner_v2.md",
+      "usage": "python domain_scanner_v2.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Domain Scanner",
+      "version_order": 2,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "domain_scanner",
+      "name": "Domain Scanner",
+      "category": "Recon",
+      "description": "Domain Scanner v1 — original",
+      "language": "Python",
+      "file_path": "data/scripts/domain_scanner.py",
+      "review_path": "data/reviews/domain_scanner.md",
+      "usage": "python domain_scanner.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Domain Scanner",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_archive_fetcher",
+      "name": "Subdomain Archive Fetcher",
+      "category": "Recon",
+      "description": "تسترجع النطاقات الفرعية من أرشيف Wayback باستخدام API CDX.",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_archive_fetcher.py",
+      "review_path": "data/reviews/subdomain_archive_fetcher.md",
+      "usage": "python subdomain_archive_fetcher.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_enum",
+      "name": "Subdomain Enum",
+      "category": "Recon",
+      "description": "Subdomain Enum — crt.sh only",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_enum.py",
+      "review_path": "data/reviews/subdomain_enum.md",
+      "usage": "python subdomain_enum.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Subdomain Enumerator",
+      "version_order": 3,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subenum1",
+      "name": "Subenum1",
+      "category": "Recon",
+      "description": "Subdomain Enumerator v2 — 5 sources (crt.sh, OTX, URLScan, Wayback, HackerTarget)",
+      "language": "Python",
+      "file_path": "data/scripts/subenum1.py",
+      "review_path": "data/reviews/subenum1.md",
+      "usage": "python subenum1.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": "Subdomain Enumerator",
+      "version_order": 2,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subenum",
+      "name": "Subenum",
+      "category": "Recon",
+      "description": "Subdomain Enumerator v1 — 3 sources",
+      "language": "Python",
+      "file_path": "data/scripts/subenum.py",
+      "review_path": "data/reviews/subenum.md",
+      "usage": "python subenum.py [args]",
+      "tags": [
+        "Recon",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "Subdomain Enumerator",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "advanced_scanner",
+      "name": "Advanced Scanner",
+      "category": "Web",
+      "description": "WordPress + CORS + security headers + port scan",
+      "language": "Python",
+      "file_path": "data/scripts/advanced_scanner.py",
+      "review_path": "data/reviews/advanced_scanner.md",
+      "usage": "python advanced_scanner.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "bypass_403",
+      "name": "Bypass 403",
+      "category": "Web",
+      "description": "PCT Bypass 403 v2.1 - HackerOne Ready",
+      "language": "Python",
+      "file_path": "data/scripts/bypass_403.py",
+      "review_path": "data/reviews/bypass_403.md",
+      "usage": "python bypass_403.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cookie_security_analyzer",
+      "name": "Cookie Security Analyzer",
+      "category": "Web",
+      "description": "Analyzes cookie flags: HttpOnly, Secure, SameSite",
+      "language": "Python",
+      "file_path": "data/scripts/cookie_security_analyzer.py",
+      "review_path": "data/reviews/cookie_security_analyzer.md",
+      "usage": "python cookie_security_analyzer.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "gql_assessor",
+      "name": "GraphQL Assessor",
+      "category": "Web",
+      "description": "CATEGORY: Security Tool - GraphQL Assessment",
+      "language": "Python",
+      "file_path": "data/scripts/gql_assessor.py",
+      "review_path": "data/reviews/gql_assessor.md",
+      "usage": "python gql_assessor.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "websecscanner",
+      "name": "WebSecScanner",
+      "category": "Web",
+      "description": "CORS + HTTP methods + security headers scanner",
+      "language": "Python",
+      "file_path": "data/scripts/websecscanner.py",
+      "review_path": "data/reviews/websecscanner.md",
+      "usage": "python websecscanner.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": "HTTP Headers",
+      "version_order": 2,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "http_security_header_scanner",
+      "name": "Http Security Header Scanner",
+      "category": "Web",
+      "description": "فحص رؤوس الأمان في استجابة HTTP.",
+      "language": "Python",
+      "file_path": "data/scripts/http_security_header_scanner.py",
+      "review_path": "data/reviews/http_security_header_scanner.md",
+      "usage": "python http_security_header_scanner.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "HTTP Headers",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "http_methods_tester",
+      "name": "Http Methods Tester",
+      "category": "Web",
+      "description": "HTTP Methods Tester v2.0 - Full vulnerability detection",
+      "language": "Python",
+      "file_path": "data/scripts/http_methods_tester.py",
+      "review_path": "data/reviews/http_methods_tester.md",
+      "usage": "python http_methods_tester.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": "HTTP Methods",
+      "version_order": 1,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ipv6_http_scanner",
+      "name": "Ipv6 Http Scanner",
+      "category": "Web",
+      "description": "HTTP header check for IPv6 targets",
+      "language": "Python",
+      "file_path": "data/scripts/ipv6_http_scanner.py",
+      "review_path": "data/reviews/ipv6_http_scanner.md",
+      "usage": "python ipv6_http_scanner.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "open_redirect_checker",
+      "name": "Open Redirect Checker",
+      "category": "Web",
+      "description": "Tests parameters for open redirect vulnerabilities",
+      "language": "Python",
+      "file_path": "data/scripts/open_redirect_checker.py",
+      "review_path": "data/reviews/open_redirect_checker.md",
+      "usage": "python open_redirect_checker.py [args]",
+      "tags": [
+        "Web",
+        "Python"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 88,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wprecon",
+      "name": "WPRecon",
+      "category": "Web",
+      "description": "WordPress recon: version, plugins, CVE mapping, user enum",
+      "language": "Python",
+      "file_path": "data/scripts/wprecon.py",
+      "review_path": "data/reviews/wprecon.md",
+      "usage": "python wprecon.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Custom"
+      ],
+      "author": "NSMSO",
+      "confidence_score": 95,
+      "created_at": "2026-10-24",
+      "family": null,
+      "version_order": 0,
+      "is_manual": true,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_finder_via_certificate_transpa",
+      "name": "Subdomain Finder Via Certificate Transpa",
+      "category": "Recon",
+      "description": "Subdomain finder via Certificate Transparency (crt.sh) + AlienVault OTX + URLScan.io, with live check + tech detection",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_finder_via_certificate_transpa.py",
+      "review_path": "data/reviews/subdomain_finder_via_certificate_transpa.md",
+      "usage": "python subdomain_finder_via_certificate_transpa.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:40:35.920770",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "dns_records_enumerator_a_aaaa_mx_txt_ns",
+      "name": "Dns Records Enumerator A Aaaa Mx Txt Ns",
+      "category": "Recon",
+      "description": "DNS records enumerator (A, AAAA, MX, TXT, NS, SOA, CAA) + wildcard detection + zone transfer test",
+      "language": "Python",
+      "file_path": "data/scripts/dns_records_enumerator_a_aaaa_mx_txt_ns.py",
+      "review_path": "data/reviews/dns_records_enumerator_a_aaaa_mx_txt_ns.md",
+      "usage": "python dns_records_enumerator_a_aaaa_mx_txt_ns.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:42:05.467511",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "asn_ip_range_mapper_given_domain_find_al",
+      "name": "Asn Ip Range Mapper Given Domain Find Al",
+      "category": "Recon",
+      "description": "ASN/IP range mapper: given domain → find all IPs → group by ASN → map org infrastructure",
+      "language": "Python",
+      "file_path": "data/scripts/asn_ip_range_mapper_given_domain_find_al.py",
+      "review_path": "data/reviews/asn_ip_range_mapper_given_domain_find_al.md",
+      "usage": "python asn_ip_range_mapper_given_domain_find_al.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:42:42.975305",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wayback_machine_url_extractor_js_files_f",
+      "name": "Wayback Machine Url Extractor Js Files F",
+      "category": "Recon",
+      "description": "Wayback Machine URL extractor + JS files finder + parameter extraction for potential XSS",
+      "language": "Python",
+      "file_path": "data/scripts/wayback_machine_url_extractor_js_files_f.py",
+      "review_path": "data/reviews/wayback_machine_url_extractor_js_files_f.md",
+      "usage": "python wayback_machine_url_extractor_js_files_f.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:43:28.820705",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "csrf_tester_token_presence_token_validat",
+      "name": "Csrf Tester Token Presence Token Validat",
+      "category": "Web",
+      "description": "CSRF tester: token presence, token validation, SameSite bypass, JSON endpoint check",
+      "language": "Python",
+      "file_path": "data/scripts/csrf_tester_token_presence_token_validat.py",
+      "review_path": "data/reviews/csrf_tester_token_presence_token_validat.md",
+      "usage": "python csrf_tester_token_presence_token_validat.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:45:22.039263",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "open_redirect_advanced_30_bypass_payload",
+      "name": "Open Redirect Advanced 30 Bypass Payload",
+      "category": "Web",
+      "description": "Open redirect advanced: 30+ bypass payloads (//, @, %, unicode) + chain to OAuth",
+      "language": "Python",
+      "file_path": "data/scripts/open_redirect_advanced_30_bypass_payload.py",
+      "review_path": "data/reviews/open_redirect_advanced_30_bypass_payload.md",
+      "usage": "python open_redirect_advanced_30_bypass_payload.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:46:00.052737",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "sql_injection_error_based_time_based_boo",
+      "name": "Sql Injection Error Based Time Based Boo",
+      "category": "Web",
+      "description": "SQL injection: error-based + time-based + boolean, with WAF evasion",
+      "language": "Python",
+      "file_path": "data/scripts/sql_injection_error_based_time_based_boo.py",
+      "review_path": "data/reviews/sql_injection_error_based_time_based_boo.md",
+      "usage": "python sql_injection_error_based_time_based_boo.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:46:35.433863",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "graphql_security_scanner_introspection_f",
+      "name": "Graphql Security Scanner Introspection F",
+      "category": "API",
+      "description": "GraphQL security scanner: introspection + field suggestion + batch query DoS + IDOR in mutations",
+      "language": "Python",
+      "file_path": "data/scripts/graphql_security_scanner_introspection_f.py",
+      "review_path": "data/reviews/graphql_security_scanner_introspection_f.md",
+      "usage": "python graphql_security_scanner_introspection_f.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:47:24.302022",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "jwt_forge",
+      "name": "Jwt Forge",
+      "category": "API",
+      "description": "JWT security tester: none algorithm + weak secret brute force + algorithm confusion (RS256→HS256)",
+      "language": "Python",
+      "file_path": "data/scripts/jwt_forge.py",
+      "review_path": "data/reviews/jwt_forge.md",
+      "usage": "python jwt_forge.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:47:48.444085",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "rest_api_fuzzer_endpoint_discovery_metho",
+      "name": "Rest Api Fuzzer Endpoint Discovery Metho",
+      "category": "API",
+      "description": "REST API fuzzer: endpoint discovery + method override + mass assignment + rate limit",
+      "language": "Python",
+      "file_path": "data/scripts/rest_api_fuzzer_endpoint_discovery_metho.py",
+      "review_path": "data/reviews/rest_api_fuzzer_endpoint_discovery_metho.md",
+      "usage": "python rest_api_fuzzer_endpoint_discovery_metho.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:48:14.923423",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "oauth_2_0_misconfig_tester_redirect_uri",
+      "name": "Oauth 2 0 Misconfig Tester Redirect Uri",
+      "category": "API",
+      "description": "OAuth 2.0 misconfig tester: redirect_uri, state param, PKCE, token leakage",
+      "language": "Python",
+      "file_path": "data/scripts/oauth_2_0_misconfig_tester_redirect_uri.py",
+      "review_path": "data/reviews/oauth_2_0_misconfig_tester_redirect_uri.md",
+      "usage": "python oauth_2_0_misconfig_tester_redirect_uri.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:48:43.353993",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_metadata_ssrf_tester_aws_gcp_azure",
+      "name": "Cloud Metadata Ssrf Tester Aws Gcp Azure",
+      "category": "Cloud",
+      "description": "Cloud metadata SSRF tester: AWS/GCP/Azure metadata endpoints + IAM credential extraction",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_metadata_ssrf_tester_aws_gcp_azure.py",
+      "review_path": "data/reviews/cloud_metadata_ssrf_tester_aws_gcp_azure.md",
+      "usage": "python cloud_metadata_ssrf_tester_aws_gcp_azure.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:49:59.817893",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_takeover_dangling_cname_s3_her",
+      "name": "Subdomain Takeover Dangling Cname S3 Her",
+      "category": "Cloud",
+      "description": "Subdomain takeover: dangling CNAME → S3/Heroku/GitHub Pages/Azure detection",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_takeover_dangling_cname_s3_her.py",
+      "review_path": "data/reviews/subdomain_takeover_dangling_cname_s3_her.md",
+      "usage": "python subdomain_takeover_dangling_cname_s3_her.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:51:28.091287",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "weak_crypto_detector_md5_sha1_des_usage",
+      "name": "Weak Crypto Detector Md5 Sha1 Des Usage",
+      "category": "Crypto",
+      "description": "Weak crypto detector: MD5/SHA1/DES usage in JS bundles + hardcoded keys",
+      "language": "Python",
+      "file_path": "data/scripts/weak_crypto_detector_md5_sha1_des_usage.py",
+      "review_path": "data/reviews/weak_crypto_detector_md5_sha1_des_usage.md",
+      "usage": "python weak_crypto_detector_md5_sha1_des_usage.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:51:49.472088",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "tls_ssl_analyzer_cert_chain_cipher_suite",
+      "name": "Tls Ssl Analyzer Cert Chain Cipher Suite",
+      "category": "Crypto",
+      "description": "TLS/SSL analyzer: cert chain, cipher suites, protocol versions, HSTS, HPKP",
+      "language": "Python",
+      "file_path": "data/scripts/tls_ssl_analyzer_cert_chain_cipher_suite.py",
+      "review_path": "data/reviews/tls_ssl_analyzer_cert_chain_cipher_suite.md",
+      "usage": "python tls_ssl_analyzer_cert_chain_cipher_suite.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:53:37.742774",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "password_hash_identifier_hashcat_hash_mo",
+      "name": "Password Hash Identifier Hashcat Hash Mo",
+      "category": "Crypto",
+      "description": "Password hash identifier + hashcat hash mode matcher",
+      "language": "Python",
+      "file_path": "data/scripts/password_hash_identifier_hashcat_hash_mo.py",
+      "review_path": "data/reviews/password_hash_identifier_hashcat_hash_mo.md",
+      "usage": "python password_hash_identifier_hashcat_hash_mo.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:54:02.828026",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "email_breach_aggregator_hibp_leakcheck_d",
+      "name": "Email Breach Aggregator Hibp Leakcheck D",
+      "category": "OSINT",
+      "description": "Email breach aggregator: HIBP + LeakCheck + DeHashed + local search",
+      "language": "Python",
+      "file_path": "data/scripts/email_breach_aggregator_hibp_leakcheck_d.py",
+      "review_path": "data/reviews/email_breach_aggregator_hibp_leakcheck_d.md",
+      "usage": "python email_breach_aggregator_hibp_leakcheck_d.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:54:26.581787",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "github_secret_scanner_search_org_repos_f",
+      "name": "Github Secret Scanner Search Org Repos F",
+      "category": "OSINT",
+      "description": "GitHub secret scanner: search org repos for API keys, tokens, passwords in commits",
+      "language": "Python",
+      "file_path": "data/scripts/github_secret_scanner_search_org_repos_f.py",
+      "review_path": "data/reviews/github_secret_scanner_search_org_repos_f.md",
+      "usage": "python github_secret_scanner_search_org_repos_f.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:55:03.766710",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "social_media_osint_username_enumeration",
+      "name": "Social Media Osint Username Enumeration",
+      "category": "OSINT",
+      "description": "Social media OSINT: username enumeration across 30+ platforms",
+      "language": "Python",
+      "file_path": "data/scripts/social_media_osint_username_enumeration.py",
+      "review_path": "data/reviews/social_media_osint_username_enumeration.md",
+      "usage": "python social_media_osint_username_enumeration.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:58:00.614881",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "pe_file_analyzer_imports_exports_section",
+      "name": "Pe File Analyzer Imports Exports Section",
+      "category": "Malware",
+      "description": "PE file analyzer: imports, exports, sections, entropy, signature detection, YARA-like patterns",
+      "language": "Python",
+      "file_path": "data/scripts/pe_file_analyzer_imports_exports_section.py",
+      "review_path": "data/reviews/pe_file_analyzer_imports_exports_section.md",
+      "usage": "python pe_file_analyzer_imports_exports_section.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:58:16.352447",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "yara_rule_tester_validate_rules_against",
+      "name": "Yara Rule Tester Validate Rules Against",
+      "category": "Malware",
+      "description": "YARA rule tester: validate rules against samples, generate report",
+      "language": "Python",
+      "file_path": "data/scripts/yara_rule_tester_validate_rules_against.py",
+      "review_path": "data/reviews/yara_rule_tester_validate_rules_against.md",
+      "usage": "python yara_rule_tester_validate_rules_against.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:58:32.729460",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "smart_contract_scanner_reentrancy_intege",
+      "name": "Smart Contract Scanner Reentrancy Intege",
+      "category": "Blockchain",
+      "description": "Smart contract scanner: reentrancy, integer overflow, access control, unchecked calls",
+      "language": "Python",
+      "file_path": "data/scripts/smart_contract_scanner_reentrancy_intege.py",
+      "review_path": "data/reviews/smart_contract_scanner_reentrancy_intege.md",
+      "usage": "python smart_contract_scanner_reentrancy_intege.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:58:54.529014",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wallet_activity_tracker_transactions_tok",
+      "name": "Wallet Activity Tracker Transactions Tok",
+      "category": "Blockchain",
+      "description": "Wallet activity tracker: transactions, token holdings, DeFi interactions, risk score",
+      "language": "Python",
+      "file_path": "data/scripts/wallet_activity_tracker_transactions_tok.py",
+      "review_path": "data/reviews/wallet_activity_tracker_transactions_tok.md",
+      "usage": "python wallet_activity_tracker_transactions_tok.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge"
+      ],
+      "author": "Autonomous Forge",
+      "confidence_score": 95,
+      "created_at": "2026-10-24T21:59:29.089700",
+      "is_manual": false,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "dns_records",
+      "name": "Dns Records",
+      "category": "Recon",
+      "description": "DNS records",
+      "language": "Python",
+      "file_path": "data/scripts/dns_records.py",
+      "review_path": "data/reviews/dns_records.md",
+      "usage": "python dns_records.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:19:33.349662",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "tls_analysis",
+      "name": "Tls Analysis",
+      "category": "Crypto",
+      "description": "TLS analysis",
+      "language": "Python",
+      "file_path": "data/scripts/tls_analysis.py",
+      "review_path": "data/reviews/tls_analysis.md",
+      "usage": "python tls_analysis.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:19:42.400357",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "pe_analysis",
+      "name": "Pe Analysis",
+      "category": "Malware",
+      "description": "PE analysis",
+      "language": "Python",
+      "file_path": "data/scripts/pe_analysis.py",
+      "review_path": "data/reviews/pe_analysis.md",
+      "usage": "python pe_analysis.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:19:51.637305",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "csrf",
+      "name": "Csrf",
+      "category": "Web",
+      "description": "CSRF",
+      "language": "Python",
+      "file_path": "data/scripts/csrf.py",
+      "review_path": "data/reviews/csrf.md",
+      "usage": "python csrf.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:01.382924",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "oauth_misconfig",
+      "name": "Oauth Misconfig",
+      "category": "API",
+      "description": "OAuth misconfig",
+      "language": "Python",
+      "file_path": "data/scripts/oauth_misconfig.py",
+      "review_path": "data/reviews/oauth_misconfig.md",
+      "usage": "python oauth_misconfig.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:10.675119",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "integer_overflow",
+      "name": "Integer Overflow",
+      "category": "Blockchain",
+      "description": "Integer overflow",
+      "language": "Python",
+      "file_path": "data/scripts/integer_overflow.py",
+      "review_path": "data/reviews/integer_overflow.md",
+      "usage": "python integer_overflow.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:19.824486",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "xss_stored",
+      "name": "Xss Stored",
+      "category": "Web",
+      "description": "XSS stored",
+      "language": "Python",
+      "file_path": "data/scripts/xss_stored.py",
+      "review_path": "data/reviews/xss_stored.md",
+      "usage": "python xss_stored.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:28.705363",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "hardcoded_keys",
+      "name": "Hardcoded Keys",
+      "category": "Crypto",
+      "description": "Hardcoded keys",
+      "language": "Python",
+      "file_path": "data/scripts/hardcoded_keys.py",
+      "review_path": "data/reviews/hardcoded_keys.md",
+      "usage": "python hardcoded_keys.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:38.063372",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "idor_test",
+      "name": "Idor Test",
+      "category": "API",
+      "description": "IDOR test",
+      "language": "Python",
+      "file_path": "data/scripts/idor_test.py",
+      "review_path": "data/reviews/idor_test.md",
+      "usage": "python idor_test.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:20:47.581879",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "sqli",
+      "name": "Sqli",
+      "category": "Web",
+      "description": "SQLi",
+      "language": "Python",
+      "file_path": "data/scripts/sqli.py",
+      "review_path": "data/reviews/sqli.md",
+      "usage": "python sqli.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:21:01.763971",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "open_redirect",
+      "name": "Open Redirect",
+      "category": "Web",
+      "description": "Open redirect",
+      "language": "Python",
+      "file_path": "data/scripts/open_redirect.py",
+      "review_path": "data/reviews/open_redirect.md",
+      "usage": "python open_redirect.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:21:16.098900",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_assets",
+      "name": "Cloud Assets",
+      "category": "Recon",
+      "description": "Cloud assets",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_assets.py",
+      "review_path": "data/reviews/cloud_assets.md",
+      "usage": "python cloud_assets.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:21:25.242673",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_enumeration",
+      "name": "Subdomain Enumeration",
+      "category": "Recon",
+      "description": "Subdomain enumeration",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_enumeration.py",
+      "review_path": "data/reviews/subdomain_enumeration.md",
+      "usage": "python subdomain_enumeration.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:21:44.475978",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "wayback_urls",
+      "name": "Wayback Urls",
+      "category": "Recon",
+      "description": "Wayback URLs",
+      "language": "Python",
+      "file_path": "data/scripts/wayback_urls.py",
+      "review_path": "data/reviews/wayback_urls.md",
+      "usage": "python wayback_urls.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:21:52.998613",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "xss_reflected",
+      "name": "Xss Reflected",
+      "category": "Web",
+      "description": "XSS reflected",
+      "language": "Python",
+      "file_path": "data/scripts/xss_reflected.py",
+      "review_path": "data/reviews/xss_reflected.md",
+      "usage": "python xss_reflected.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:22:07.634922",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ssrf",
+      "name": "Ssrf",
+      "category": "Web",
+      "description": "SSRF",
+      "language": "Python",
+      "file_path": "data/scripts/ssrf.py",
+      "review_path": "data/reviews/ssrf.md",
+      "usage": "python ssrf.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:22:20.728968",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "social_media",
+      "name": "Social Media",
+      "category": "OSINT",
+      "description": "Social media",
+      "language": "Python",
+      "file_path": "data/scripts/social_media.py",
+      "review_path": "data/reviews/social_media.md",
+      "usage": "python social_media.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:22:29.665848",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "reentrancy",
+      "name": "Reentrancy",
+      "category": "Blockchain",
+      "description": "Reentrancy",
+      "language": "Python",
+      "file_path": "data/scripts/reentrancy.py",
+      "review_path": "data/reviews/reentrancy.md",
+      "usage": "python reentrancy.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:22:44.860723",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "access_control",
+      "name": "Access Control",
+      "category": "Blockchain",
+      "description": "Access control",
+      "language": "Python",
+      "file_path": "data/scripts/access_control.py",
+      "review_path": "data/reviews/access_control.md",
+      "usage": "python access_control.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:23:03.760764",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "certificate_transparency",
+      "name": "Certificate Transparency",
+      "category": "Recon",
+      "description": "Certificate transparency",
+      "language": "Python",
+      "file_path": "data/scripts/certificate_transparency.py",
+      "review_path": "data/reviews/certificate_transparency.md",
+      "usage": "python certificate_transparency.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:23:12.293468",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "github_secrets",
+      "name": "Github Secrets",
+      "category": "OSINT",
+      "description": "GitHub secrets",
+      "language": "Python",
+      "file_path": "data/scripts/github_secrets.py",
+      "review_path": "data/reviews/github_secrets.md",
+      "usage": "python github_secrets.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:23:27.173803",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "weak_hash",
+      "name": "Weak Hash",
+      "category": "Crypto",
+      "description": "Weak hash",
+      "language": "Python",
+      "file_path": "data/scripts/weak_hash.py",
+      "review_path": "data/reviews/weak_hash.md",
+      "usage": "python weak_hash.py [args]",
+      "tags": [
+        "Crypto",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:23:42.439200",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "graphql_introspection",
+      "name": "Graphql Introspection",
+      "category": "API",
+      "description": "GraphQL introspection",
+      "language": "Python",
+      "file_path": "data/scripts/graphql_introspection.py",
+      "review_path": "data/reviews/graphql_introspection.md",
+      "usage": "python graphql_introspection.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:24:01.988882",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "azure_blob",
+      "name": "Azure Blob",
+      "category": "Cloud",
+      "description": "Azure blob",
+      "language": "Python",
+      "file_path": "data/scripts/azure_blob.py",
+      "review_path": "data/reviews/azure_blob.md",
+      "usage": "python azure_blob.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:24:16.001854",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "api_key_leak",
+      "name": "Api Key Leak",
+      "category": "API",
+      "description": "API key leak",
+      "language": "Python",
+      "file_path": "data/scripts/api_key_leak.py",
+      "review_path": "data/reviews/api_key_leak.md",
+      "usage": "python api_key_leak.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:24:30.409783",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_metadata",
+      "name": "Cloud Metadata",
+      "category": "Cloud",
+      "description": "Cloud metadata",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_metadata.py",
+      "review_path": "data/reviews/cloud_metadata.md",
+      "usage": "python cloud_metadata.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:24:44.179677",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "s3_buckets",
+      "name": "S3 Buckets",
+      "category": "Cloud",
+      "description": "S3 buckets",
+      "language": "Python",
+      "file_path": "data/scripts/s3_buckets.py",
+      "review_path": "data/reviews/s3_buckets.md",
+      "usage": "python s3_buckets.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:24:53.598960",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "email_breach",
+      "name": "Email Breach",
+      "category": "OSINT",
+      "description": "Email breach",
+      "language": "Python",
+      "file_path": "data/scripts/email_breach.py",
+      "review_path": "data/reviews/email_breach.md",
+      "usage": "python email_breach.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:25:07.290859",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "macro_extraction",
+      "name": "Macro Extraction",
+      "category": "Malware",
+      "description": "Macro extraction",
+      "language": "Python",
+      "file_path": "data/scripts/macro_extraction.py",
+      "review_path": "data/reviews/macro_extraction.md",
+      "usage": "python macro_extraction.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:25:22.035091",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "yara_matching",
+      "name": "Yara Matching",
+      "category": "Malware",
+      "description": "YARA matching",
+      "language": "Python",
+      "file_path": "data/scripts/yara_matching.py",
+      "review_path": "data/reviews/yara_matching.md",
+      "usage": "python yara_matching.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:25:37.043997",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_takeover",
+      "name": "Subdomain Takeover",
+      "category": "Cloud",
+      "description": "Subdomain takeover",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_takeover.py",
+      "review_path": "data/reviews/subdomain_takeover.md",
+      "usage": "python subdomain_takeover.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:25:50.928140",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "jwt_analysis",
+      "name": "Jwt Analysis",
+      "category": "API",
+      "description": "JWT analysis",
+      "language": "Python",
+      "file_path": "data/scripts/jwt_analysis.py",
+      "review_path": "data/reviews/jwt_analysis.md",
+      "usage": "python jwt_analysis.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:26:06.042442",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "jwt_analysis_v58",
+      "name": "Jwt Analysis V58",
+      "category": "API",
+      "description": "JWT analysis",
+      "language": "Python",
+      "file_path": "data/scripts/jwt_analysis_v58.py",
+      "review_path": "data/reviews/jwt_analysis_v58.md",
+      "usage": "python jwt_analysis_v58.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:26:20.615715",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "integer_overflow_v62",
+      "name": "Integer Overflow V62",
+      "category": "Blockchain",
+      "description": "Integer overflow",
+      "language": "Python",
+      "file_path": "data/scripts/integer_overflow_v62.py",
+      "review_path": "data/reviews/integer_overflow_v62.md",
+      "usage": "python integer_overflow_v62.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:26:35.777876",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_assets_v66",
+      "name": "Cloud Assets V66",
+      "category": "Recon",
+      "description": "Cloud assets",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_assets_v66.py",
+      "review_path": "data/reviews/cloud_assets_v66.md",
+      "usage": "python cloud_assets_v66.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:26:49.730387",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_enumeration_v70",
+      "name": "Subdomain Enumeration V70",
+      "category": "Recon",
+      "description": "Subdomain enumeration",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_enumeration_v70.py",
+      "review_path": "data/reviews/subdomain_enumeration_v70.md",
+      "usage": "python subdomain_enumeration_v70.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:27:03.750625",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "social_media_v74",
+      "name": "Social Media V74",
+      "category": "OSINT",
+      "description": "Social media",
+      "language": "Python",
+      "file_path": "data/scripts/social_media_v74.py",
+      "review_path": "data/reviews/social_media_v74.md",
+      "usage": "python social_media_v74.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:27:18.589193",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_takeover_v78",
+      "name": "Subdomain Takeover V78",
+      "category": "Cloud",
+      "description": "Subdomain takeover",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_takeover_v78.py",
+      "review_path": "data/reviews/subdomain_takeover_v78.md",
+      "usage": "python subdomain_takeover_v78.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:27:33.668083",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "idor_test_v82",
+      "name": "Idor Test V82",
+      "category": "API",
+      "description": "IDOR test",
+      "language": "Python",
+      "file_path": "data/scripts/idor_test_v82.py",
+      "review_path": "data/reviews/idor_test_v82.md",
+      "usage": "python idor_test_v82.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:27:47.628431",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "s3_buckets_v84",
+      "name": "S3 Buckets V84",
+      "category": "Cloud",
+      "description": "S3 buckets",
+      "language": "Python",
+      "file_path": "data/scripts/s3_buckets_v84.py",
+      "review_path": "data/reviews/s3_buckets_v84.md",
+      "usage": "python s3_buckets_v84.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:28:02.219822",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "reentrancy_v88",
+      "name": "Reentrancy V88",
+      "category": "Blockchain",
+      "description": "Reentrancy",
+      "language": "Python",
+      "file_path": "data/scripts/reentrancy_v88.py",
+      "review_path": "data/reviews/reentrancy_v88.md",
+      "usage": "python reentrancy_v88.py [args]",
+      "tags": [
+        "Blockchain",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:28:17.461969",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "graphql_introspection_v92",
+      "name": "Graphql Introspection V92",
+      "category": "API",
+      "description": "GraphQL introspection",
+      "language": "Python",
+      "file_path": "data/scripts/graphql_introspection_v92.py",
+      "review_path": "data/reviews/graphql_introspection_v92.md",
+      "usage": "python graphql_introspection_v92.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:28:31.871169",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "pe_analysis_v96",
+      "name": "Pe Analysis V96",
+      "category": "Malware",
+      "description": "PE analysis",
+      "language": "Python",
+      "file_path": "data/scripts/pe_analysis_v96.py",
+      "review_path": "data/reviews/pe_analysis_v96.md",
+      "usage": "python pe_analysis_v96.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:28:46.974397",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "azure_blob_v100",
+      "name": "Azure Blob V100",
+      "category": "Cloud",
+      "description": "Azure blob",
+      "language": "Python",
+      "file_path": "data/scripts/azure_blob_v100.py",
+      "review_path": "data/reviews/azure_blob_v100.md",
+      "usage": "python azure_blob_v100.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:29:01.265340",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_metadata_v104",
+      "name": "Cloud Metadata V104",
+      "category": "Cloud",
+      "description": "Cloud metadata",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_metadata_v104.py",
+      "review_path": "data/reviews/cloud_metadata_v104.md",
+      "usage": "python cloud_metadata_v104.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:29:16.046677",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "yara_matching_v108",
+      "name": "Yara Matching V108",
+      "category": "Malware",
+      "description": "YARA matching",
+      "language": "Python",
+      "file_path": "data/scripts/yara_matching_v108.py",
+      "review_path": "data/reviews/yara_matching_v108.md",
+      "usage": "python yara_matching_v108.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:29:30.617215",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "oauth_misconfig_v112",
+      "name": "Oauth Misconfig V112",
+      "category": "API",
+      "description": "OAuth misconfig",
+      "language": "Python",
+      "file_path": "data/scripts/oauth_misconfig_v112.py",
+      "review_path": "data/reviews/oauth_misconfig_v112.md",
+      "usage": "python oauth_misconfig_v112.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:29:45.719654",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "sqli_v343",
+      "name": "Sqli V343",
+      "category": "Web",
+      "description": "SQLi",
+      "language": "Python",
+      "file_path": "data/scripts/sqli_v343.py",
+      "review_path": "data/reviews/sqli_v343.md",
+      "usage": "python sqli_v343.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:50:01.590979",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "email_breach_v421",
+      "name": "Email Breach V421",
+      "category": "OSINT",
+      "description": "Email breach",
+      "language": "Python",
+      "file_path": "data/scripts/email_breach_v421.py",
+      "review_path": "data/reviews/email_breach_v421.md",
+      "usage": "python email_breach_v421.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:53:35.455347",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "macro_extraction_v533",
+      "name": "Macro Extraction V533",
+      "category": "Malware",
+      "description": "Macro extraction",
+      "language": "Python",
+      "file_path": "data/scripts/macro_extraction_v533.py",
+      "review_path": "data/reviews/macro_extraction_v533.md",
+      "usage": "python macro_extraction_v533.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L2"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-24T22:57:07.050214",
+      "is_manual": false,
+      "level": 2,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_takeover_v0",
+      "name": "Subdomain Takeover V0",
+      "category": "Cloud",
+      "description": "Subdomain takeover",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_takeover_v0.py",
+      "review_path": "data/reviews/subdomain_takeover_v0.md",
+      "usage": "python subdomain_takeover_v0.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:29:13.682790",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "open_redirect_v1",
+      "name": "Open Redirect V1",
+      "category": "Web",
+      "description": "Open redirect",
+      "language": "Python",
+      "file_path": "data/scripts/open_redirect_v1.py",
+      "review_path": "data/reviews/open_redirect_v1.md",
+      "usage": "python open_redirect_v1.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:29:22.682741",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "subdomain_enumeration_v2",
+      "name": "Subdomain Enumeration V2",
+      "category": "Recon",
+      "description": "Subdomain enumeration",
+      "language": "Python",
+      "file_path": "data/scripts/subdomain_enumeration_v2.py",
+      "review_path": "data/reviews/subdomain_enumeration_v2.md",
+      "usage": "python subdomain_enumeration_v2.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:29:32.477234",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "dns_records_v3",
+      "name": "Dns Records V3",
+      "category": "Recon",
+      "description": "DNS records",
+      "language": "Python",
+      "file_path": "data/scripts/dns_records_v3.py",
+      "review_path": "data/reviews/dns_records_v3.md",
+      "usage": "python dns_records_v3.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:29:41.678614",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "cloud_metadata_v4",
+      "name": "Cloud Metadata V4",
+      "category": "Cloud",
+      "description": "Cloud metadata",
+      "language": "Python",
+      "file_path": "data/scripts/cloud_metadata_v4.py",
+      "review_path": "data/reviews/cloud_metadata_v4.md",
+      "usage": "python cloud_metadata_v4.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:29:51.551862",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "api_key_leak_v5",
+      "name": "Api Key Leak V5",
+      "category": "API",
+      "description": "API key leak",
+      "language": "Python",
+      "file_path": "data/scripts/api_key_leak_v5.py",
+      "review_path": "data/reviews/api_key_leak_v5.md",
+      "usage": "python api_key_leak_v5.py [args]",
+      "tags": [
+        "API",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:30:01.868678",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "ssrf_v7",
+      "name": "Ssrf V7",
+      "category": "Web",
+      "description": "SSRF",
+      "language": "Python",
+      "file_path": "data/scripts/ssrf_v7.py",
+      "review_path": "data/reviews/ssrf_v7.md",
+      "usage": "python ssrf_v7.py [args]",
+      "tags": [
+        "Web",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:30:24.300633",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "certificate_transparency_v11",
+      "name": "Certificate Transparency V11",
+      "category": "Recon",
+      "description": "Certificate transparency",
+      "language": "Python",
+      "file_path": "data/scripts/certificate_transparency_v11.py",
+      "review_path": "data/reviews/certificate_transparency_v11.md",
+      "usage": "python certificate_transparency_v11.py [args]",
+      "tags": [
+        "Recon",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:31:06.441954",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "s3_buckets_v12",
+      "name": "S3 Buckets V12",
+      "category": "Cloud",
+      "description": "S3 buckets",
+      "language": "Python",
+      "file_path": "data/scripts/s3_buckets_v12.py",
+      "review_path": "data/reviews/s3_buckets_v12.md",
+      "usage": "python s3_buckets_v12.py [args]",
+      "tags": [
+        "Cloud",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T02:31:16.361151",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "pe_analysis_v17",
+      "name": "Pe Analysis V17",
+      "category": "Malware",
+      "description": "PE analysis",
+      "language": "Python",
+      "file_path": "data/scripts/pe_analysis_v17.py",
+      "review_path": "data/reviews/pe_analysis_v17.md",
+      "usage": "python pe_analysis_v17.py [args]",
+      "tags": [
+        "Malware",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T03:50:04.643509",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    },
+    {
+      "id": "social_media_v17",
+      "name": "Social Media V17",
+      "category": "OSINT",
+      "description": "Social media",
+      "language": "Python",
+      "file_path": "data/scripts/social_media_v17.py",
+      "review_path": "data/reviews/social_media_v17.md",
+      "usage": "python social_media_v17.py [args]",
+      "tags": [
+        "OSINT",
+        "Python",
+        "Auto-Forge",
+        "L1"
+      ],
+      "author": "Autonomous Forge v3",
+      "confidence_score": 90,
+      "created_at": "2026-10-25T03:50:06.181322",
+      "is_manual": false,
+      "level": 1,
+      "metrics": {
+        "Speed": 8,
+        "Accuracy": 7,
+        "Stealth": 8,
+        "Coverage": 7,
+        "Ease of Use": 8
+      }
+    }
+  ]
+}

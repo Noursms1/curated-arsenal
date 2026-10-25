@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curated Arsenal | Security Tools</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>⚔️ Curated Arsenal</h1>
+        <p>Production-ready security tools, reviewed and refined.</p>
+        
+        <!-- Workflow Section -->
+        <div class="workflow-box">
+            <h3>🚀 Auto Recon Workflow</h3>
+            <p style="font-size:12px; color:#8b949e;">Runs Subdomain Enum, then scans the first 3 live subdomains.</p>
+            <div class="workflow-input">
+                <input type="text" id="wfTarget" placeholder="Enter target domain (e.g., hackerone.com)">
+                <button onclick="runWorkflow()" id="wfBtn">Start Workflow</button>
+            </div>
+            <pre id="wfOutput" class="wf-output" style="display:none;"></pre>
+        </div>
+
+        <!-- Smart Target Scanner -->
+        <div class="workflow-box" style="border-color: #ff7b72; margin-top: 15px;">
+            <h3 style="color: #ff7b72;">🎯 Smart Target Scanner</h3>
+            <p style="font-size:12px; color:#8b949e;">Enter a target, we auto-detect its type, pick the right tools, and run them all in one terminal.</p>
+            <div class="workflow-input">
+                <input type="text" id="smartTarget" placeholder="Domain, IP, or URL (e.g., hackerone.com)">
+                <button onclick="runSmartScan()" id="smartBtn" style="background: #ff7b72; color: white;">Auto Scan</button>
+            </div>
+            <pre id="smartOutput" class="wf-output" style="display:none; color: #ffcc00; max-height: 400px;"></pre>
+        </div>
+
+        <!-- Search & Filters -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search tools..." onkeyup="filterTools()">
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterCategory('all')">All</button>
+            <button class="filter-btn" onclick="filterCategory('recon')">Recon</button>
+            <button class="filter-btn" onclick="filterCategory('network')">Network</button>
+            <button class="filter-btn" onclick="filterCategory('web')">Web</button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="grid" id="toolsGrid">
+            {% for tool in tools %}
+            <a href="/tool/{{ tool.id }}" class="card{% if tool.duplicate_of %} duplicate{% endif %}" data-name="{{ tool.name | lower }}" data-cat="{{ tool.category | lower }}" data-tags="{{ tool.tags | join(' ') | lower }}" data-dup="{{ tool.duplicate_of or '' }}">
+                <h2>{{ tool.name }}</h2>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span class="category">{{ tool.category }}</span>
+                    <span class="confidence">⭐ {{ tool.confidence_score }}%</span>
+                 {% if tool.is_manual %}<span class="badge-custom" title="Manually developed">★ Custom</span>{% endif %}
+{% if tool.family %}<span class="badge-version" title="Part of {{ tool.family }}">v{{ tool.version_order }}</span>{% endif %}
+                </div>
+                <p>{{ tool.description }}</p>
+            </a>
+            {% endfor %}
+        </div>
+        <div id="noResults" style="display: none; text-align: center; margin-top: 40px; color: #8b949e;">
+            <h2>No tools found.</h2>
+        </div>
+    </main>
+
+    <script>
+        function filterTools() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                const tags = card.getAttribute('data-tags');
+                if (name.includes(input) || tags.includes(input)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            document.getElementById('noResults').style.display = (visibleCount === 0) ? 'block' : 'none';
+        }
+
+        function filterCategory(cat) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        async function runWorkflow() {
+            const target = document.getElementById('wfTarget').value;
+            const btn = document.getElementById('wfBtn');
+            const out = document.getElementById('wfOutput');
+            if(!target) return alert("Enter a target!");
+
+            btn.disabled = true; btn.innerText = "Running...";
+            out.style.display = 'block'; out.innerText = "Starting workflow... This may take a minute.";
+
+            try {
+                const res = await fetch("/api/workflow/recon", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({target: target})
+                });
+                const data = await res.json();
+                out.innerText = JSON.stringify(data, null, 2);
+            } catch (e) {
+                out.innerText = "Error: " + e.message;
+            }
+            btn.disabled = false; btn.innerText = "Start Workflow";
+        }
+
+        async function runSmartScan() {
+            const target = document.getElementById('smartTarget').value;
+            const btn = document.getElementById('smartBtn');
+            const out = document.getElementById('smartOutput');
+            if(!target) return alert("Enter a target!");
+
+            btn.disabled = true; btn.innerText = "Scanning...";
+            out.style.display = 'block';
+            out.innerText = "🔍 Detecting target type and selecting tools...\n\n";
+
+            try {
+                const res = await fetch("/api/smart_scan", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({target: target})
+                });
+                const data = await res.json();
+                
+                if (data.error) {
+                    out.innerText = "❌ " + data.error;
+                } else {
+                    let text = "🎯 Target: " + data.target + "\n";
+                    text += "📋 Detected Type: " + data.detected_type.toUpperCase() + "\n";
+                    text += "🔧 Tools Run: " + data.tools_run + "\n";
+                    text += "=".repeat(60) + "\n\n";
+                    
+                    data.results.forEach((r, i) => {
+                        text += "[" + (i+1) + "/" + data.tools_run + "] " + r.tool + " (" + r.status + ")\n";
+                        text += "-".repeat(60) + "\n";
+                        text += (r.output || "(No output)") + "\n";
+                        if (r.stderr && r.stderr.trim()) {
+                            text += "[STDERR]: " + r.stderr + "\n";
+                        }
+                        text += "\n" + "=".repeat(60) + "\n\n";
+                    });
+                    
+                    out.innerText = text;
+                }
+            } catch (e) {
+                out.innerText = "❌ Error: " + e.message;
+            }
+            btn.disabled = false; btn.innerText = "Auto Scan";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Generated Reports (large files)
+data/reports/*.pdf
+data/reports/*.html
+
+# Keep tools.json and scripts (that's the point!)
+# DO NOT ignore data/tools.json or data/scripts/
