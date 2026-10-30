@@ -113,6 +113,9 @@ def enumerate_subdomains(domain, probe=False, limit=500, timeout=30):
     return result
 
 if __name__ == "__main__":
+    if any(a in ("-h", "--help") for a in sys.argv[1:]):
+        print("Usage: subdomain_enum.py <domain> [--probe] [--limit=N]")
+        sys.exit(0)
     domain = sys.argv[1] if len(sys.argv) > 1 else input("Domain: ")
     probe = "--probe" in sys.argv
     limit = 500
