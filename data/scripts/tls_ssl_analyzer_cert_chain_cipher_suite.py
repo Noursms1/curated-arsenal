@@ -31,13 +31,11 @@ def fetch_cert_chain(host: str, port: int) -> List[Dict[str, Any]]:
         ctx = ssl.create_default_context()
         with socket.create_connection((host, port), timeout=DEFAULT_TIMEOUT) as sock:
             with ctx.wrap_socket(sock, server_hostname=host) as ssock:
-                der_certs = ssock.getpeercert(binary_form=True)
                 # ssl module does not expose full chain; we capture leaf only.
-                cert = ssl.DER_cert_to_PEM_cert(der_certs)
-                parsed = ssl._ssl._test_decode_cert(cert)  # type: ignore
+                parsed = ssock.getpeercert() or {}
                 chain = [{
-                    "subject": dict(parsed.get("subject", [])),
-                    "issuer": dict(parsed.get("issuer", [])),
+                    "subject": dict(rdn[0] for rdn in parsed.get("subject", [])),
+                    "issuer": dict(rdn[0] for rdn in parsed.get("issuer", [])),
                     "notBefore": parsed.get("notBefore"),
                     "notAfter": parsed.get("notAfter"),
                     "subjectAltName": parsed.get("subjectAltName", []),

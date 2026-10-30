@@ -18,6 +18,8 @@ def main():
         url = sys.stdin.read().strip()
     else:
         url = args.url
+    if "://" not in url:
+        url = "https://" + url
 
     try:
         resp = requests.get(url, timeout=10, verify=False)

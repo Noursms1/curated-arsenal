@@ -40,5 +40,23 @@ class ToolsTest(unittest.TestCase):
                 self.assertNotIn("Traceback", r.stderr, r.stderr[-400:])
 
 
+class FunctionalTest(unittest.TestCase):
+    def run_tool(self, name, *args):
+        path = os.path.join(BASE, "data", "scripts", name + ".py")
+        r = subprocess.run([sys.executable, "-W", "ignore", path, *args],
+                           capture_output=True, text=True, timeout=30, encoding="utf-8")
+        return json.loads(r.stdout)
+
+    def test_cidr_calculator(self):
+        out = self.run_tool("cidr_subnet_calc", "192.168.1.0/24")
+        self.assertEqual(out["usable_hosts"], 254)
+        self.assertEqual(out["broadcast_address"], "192.168.1.255")
+
+    def test_header_scanner_accepts_bare_host(self):
+        out = self.run_tool("http_security_header_scanner", "localhost:1")
+        self.assertTrue(out["error"].count("localhost"))  # tries http(s)://localhost:1, not a scheme error
+        self.assertNotIn("No scheme", out["error"])
+
+
 if __name__ == "__main__":
     unittest.main()
