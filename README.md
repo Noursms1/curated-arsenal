@@ -2,11 +2,11 @@
 
 > The Showroom for AI-Generated Security Tools
 
-Production-ready Flask platform for browsing, executing, and analyzing 126+ security tools.
+Production-ready Flask platform for browsing, executing, and analyzing 140 security tools.
 
 ## Features
 
-- 🔍 **126+ Tools** organized by category
+- 🔍 **140 Tools** organized by category
 - 🚀 **Smart Scanner** (auto-detects target type)
 - ⚡ **Attack Chain Analyzer** (correlates findings)
 - 📊 **CVE Mapper** (maps techs to CVEs)
@@ -20,3 +20,10 @@ git clone https://github.com/Noursms1/curated-arsenal.git
 cd curated-arsenal
 pip install flask requests
 python app.py
+```
+
+## Configuration
+
+- `ARSENAL_HOST` (default `127.0.0.1`): set `0.0.0.0` to expose on the network.
+- `ARSENAL_KEY`: if set, `/api/*` and `/download/*` require the `X-Access-Key` header.
+- `ARSENAL_DEBUG=1`: enable Flask debug mode (local use only).

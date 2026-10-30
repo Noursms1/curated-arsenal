@@ -8,6 +8,14 @@ from flask import Flask, render_template, send_from_directory, abort, jsonify, r
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
+ACCESS_KEY = os.environ.get("ARSENAL_KEY")
+
+@app.before_request
+def require_key():
+    if ACCESS_KEY and request.path.startswith(("/api/", "/download/")):
+        if request.headers.get("X-Access-Key") != ACCESS_KEY:
+            return jsonify({"error": "Unauthorized"}), 401
+
 def load_tools():
     try:
         with open(os.path.join(BASE_DIR, "data", "tools.json"), "r", encoding="utf-8") as f:
@@ -388,4 +396,5 @@ def download_tool(tool_id):
     return send_from_directory(directory, filename, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host=os.environ.get("ARSENAL_HOST", "127.0.0.1"), port=5000,
+            debug=os.environ.get("ARSENAL_DEBUG") == "1")
