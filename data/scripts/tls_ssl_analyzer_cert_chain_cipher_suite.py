@@ -47,7 +47,7 @@ def fetch_cert_chain(host: str, port: int) -> List[Dict[str, Any]]:
         return [{"error": str(e)}]
 
 
-def test_protocol(host: str, port: int, protocol: ssl.Protocol) -> bool:
+def test_protocol(host: str, port: int, protocol: int) -> bool:
     """Attempt TLS handshake with a specific protocol version."""
     try:
         ctx = ssl.SSLContext(protocol)
